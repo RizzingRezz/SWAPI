@@ -108,6 +108,22 @@ for (let i = 1; i < 5; i++) {
 }
 
 
+//------------------------------------------------------------------------------FILMS------------------------------------------------------------------------------
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+	if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+		var json  = JSON.parse(this.responseText);
+		for (let i = 0; i < json.results.length; i++) {
+			var element = document.getElementById("Film");
+			element.innerHTML +=  "<tr><td>" +json.results[i].title + "</td><td>" +json.results[i].episode_id + "</td><td>" +json.results[i].director +  "</td><td>" +json.results[i].producer + "</td><td>"+json.results[i].release_date +"</td></tr>" ;
+		}
+	}
+};
+request.open("GET", "https://swapi.dev/api/films/");
+request.send();
+
+
+
 //------------------------------------------------------------------------------SERVICE WORKERS----------------------------------------------------------------------
 const cacheName = "cache-v1";
 const assets = ['/','/index.html','/src/style.css','/src/script.js','/src/logo.png','/src/space.jpg'];
@@ -139,7 +155,7 @@ self.addEventListener("fetch", (e) => {
 });
 
 
-//------------------------------------------------------------------------------AFFICHAGE----------------------------------------------------------------------------
+//------------------------------------------------------------------------------DISPLAY----------------------------------------------------------------------------
 function Display(thingId)
 {
 	var targetElement = document.getElementById(thingId);

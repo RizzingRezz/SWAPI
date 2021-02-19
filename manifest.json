@@ -1,0 +1,15 @@
+{
+	"name": "Star Wars List",
+	"dir": "ltr",
+	"lang": "en",
+	"short_name": "SWL",
+	"description": "List differents informations from the universe of Star Wars",
+	"orientation": "portrait",
+	"scope": "/",
+	"start_url": "./index.html",
+	"display": "standalone",
+	"icons": [{
+		"src": "src/favicon.ico",
+		"sizes": "880x983"
+	}]
+}

@@ -4,6 +4,7 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="manifest" href="/manifest.json">
 		<link rel="icon" sizes="16x16" href="src/favicon.ico" />
 		<link href="src/star-jedi.css" rel="stylesheet" type="text/css" />
 		<title>Star Wars List</title>
@@ -101,6 +102,23 @@
 					<td>Cost(Credits)</td>
 					<td>Crew</td>
 					<td>Passengers</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 onclick="Display('tabFilm')">Film List</h1>
+		<table id="tabFilm" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="5">Film List</th>
+				</tr>
+			</thead>
+			<tbody id="Film">
+				<tr>
+					<td>Title</td>
+					<td>Numero</td>
+					<td>Director</td>
+					<td>Producer</td>
+					<td>Release Date</td>
 				</tr>
 			</tbody>
 		</table>
