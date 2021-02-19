@@ -1,0 +1,53 @@
+html{
+        font-family: 'Star Jedi', arial;
+		text-align: center;
+}
+
+body{
+    text-align: center;
+    margin: 0 auto;
+    background-color: black;
+	color: white;
+	background-image:url(space.jpg);
+}
+
+table,td{
+	border: 1px solid white;
+	margin-left: auto;
+	margin-right: auto;	
+}
+img{
+	height: 200px;
+}
+
+@media (max-width: 640px) {
+	* {
+		box-sizing: border-box;
+	}
+	body {
+		width: auto;
+		margin: 0;
+		padding: 0;
+	}
+	
+	img,
+	table,
+	td {
+		max-width: 100%;
+		font-size: xx-small;
+	}
+
+	img {
+		height: 100px;
+	}
+
+	table,
+	td,
+	th {
+		-webkit-hyphens: auto; /* césure propre */
+		-moz-hyphens: auto;
+		hyphens: auto;
+		word-wrap: break-word; /* passage à la ligne forcé */
+	}
+
+}

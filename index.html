@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" sizes="16x16" href="src/favicon.ico" />
+		<link href="src/star-jedi.css" rel="stylesheet" type="text/css" />
+		<title>Star Wars List</title>
+		<script src="src/script.js"></script>
+		<link rel="stylesheet" href="src/style.css">
+	</head>
+	<body>
+		<img src="src/logo.png" alt="Logo Star Wars" />
+		<h1 onclick="Display('tabPlanet')">Planet List</h1>
+		<table id="tabPlanet" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="6">Planets List</th>
+				</tr>
+			</thead>
+			<tbody id="Planet">
+				<tr>
+					<td>Name</td>
+					<td>Population</td>
+					<td>Climate</td>
+					<td>Diameter</td>
+					<td>Gravity</td>
+					<td>Terrain</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 onclick="Display('tabStarship')">Starships List</h1>
+		<table id="tabStarship" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="6">Starships List</th>
+				</tr>
+			</thead>
+			<tbody id="Starships">
+				<tr>
+					<td>Name</td>
+					<td>Model</td>
+					<td>Manufacturer</td>
+					<td>Cost(Credits)</td>
+					<td>Crew</td>
+					<td>Passengers</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 onclick="Display('tabPeople')">People List</h1>
+		<table id="tabPeople" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="7">People List</th>
+				</tr>
+			</thead>
+			<tbody id="People">
+				<tr>
+					<td>Name</td>
+					<td>Height</td>
+					<td>Gender</td>
+					<td>Hair Color</td>
+					<td>Skin Color</td>
+					<td>Eye Color</td>
+					<td>Birth Year</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 onclick="Display('tabSpecies')">Species List</h1>
+		<table id="tabSpecies" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="7">Species List</th>
+				</tr>
+			</thead>
+			<tbody id="Species">
+				<tr>
+					<td>Name</td>
+					<td>Classification</td>
+					<td>Designation</td>
+					<td>Hair Color</td>
+					<td>Skin Color</td>
+					<td>Eye Color</td>
+					<td>Language</td>
+				</tr>
+			</tbody>
+		</table>
+		<h1 onclick="Display('tabVehicules')">vehicules List</h1>
+		<table id="tabVehicules" style="display:none">
+			<thead>
+				<tr>
+					<th colspan="6">vehicules List</th>
+				</tr>
+			</thead>
+			<tbody id="Vehicules">
+				<tr>
+					<td>Name</td>
+					<td>Model</td>
+					<td>Manufacturer</td>
+					<td>Cost(Credits)</td>
+					<td>Crew</td>
+					<td>Passengers</td>
+				</tr>
+			</tbody>
+		</table>
+	</body>
+</html>
